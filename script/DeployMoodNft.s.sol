@@ -30,6 +30,7 @@ contract DeployMoodNft is Script {
         return moodNft;
     }
 
+    // You could also just upload the raw SVG and have solildity convert it!
     function svgToImageURI(
         string memory svg
     ) public pure returns (string memory) {
