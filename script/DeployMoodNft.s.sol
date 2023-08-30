@@ -18,8 +18,8 @@ contract DeployMoodNft is Script {
             deployerKey = vm.envUint("PRIVATE_KEY");
         }
 
-        string memory sadSvg = vm.readFile("./images/dynamicNft/sad.svg");
-        string memory happySvg = vm.readFile("./images/dynamicNft/happy.svg");
+        string memory sadSvg = vm.readFile("./images/sad.svg");
+        string memory happySvg = vm.readFile("./images/happy.svg");
 
         vm.startBroadcast(deployerKey);
         MoodNft moodNft = new MoodNft(
